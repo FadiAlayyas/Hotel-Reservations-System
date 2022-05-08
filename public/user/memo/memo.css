@@ -1,0 +1,327 @@
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+     :root {
+        --transition: all 0.7s ease;
+        --yellow: #b4546d;
+        --dark: #292826;
+    }
+
+    body {
+        background: #f9f9f9;
+    }
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    *::selection {
+        background: rgba(212, 65, 7, 0.6);
+        color: #fff;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        line-height: 1.6;
+        background-color: #f1f0f0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .user__avatar {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+    }
+
+    .btn {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        width: 140px;
+        display: block;
+        margin: 15px auto;
+        cursor: pointer;
+        transition: var(--transition);
+        /* transition: all 0.5s ease-in-out; */
+    }
+
+    .btn:hover {
+        opacity: 0.7;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.btn-danger{
+    color: red;
+}
+.btn-success{
+    color: green;
+}
+    h1,h2,h3,h4, h5,h6 {
+        padding: 8px 0;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    @media(max-width: 500px) {
+        body {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    .emptymessage {
+        color: black;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        padding-left: 100px;
+    }
+
+    .feed {
+        flex: 1;
+        padding: 30px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .memsP{
+        margin-top: 90px;
+    }
+    /* post */
+
+    .post {
+        width: 500px;
+        margin-top: 9px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    }
+
+    .post__image {
+        overflow: hidden;
+    }
+
+    .post__image img {
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .post__image img:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    .post__top {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+
+    .post__avatar {
+        margin-right: 10px;
+    }
+
+    .post__topInfo h3 {
+        font-size: medium;
+    }
+
+    .post__topInfo p {
+        font-size: small;
+        color: gray;
+    }
+
+    .post__bottom {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 15px 25px;
+        word-wrap: break-word;
+        font-size: 120%;
+    }
+
+    .post__options {
+        padding-left: 28px;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: medium;
+        color: gray;
+        cursor: pointer;
+        /* padding: 15px; */
+        width: 20%;
+        height: 70px;
+        margin-left: 100px;
+    }
+
+    #like,
+    #dislike {
+        background-color: rgb(224, 224, 224);
+        border-radius: 10px;
+        margin-right: 40px;
+        padding-left: 25px;
+        font-size: 15px;
+        transition: all 0.5s ease-in-out;
+        width: 100px;
+        height: 40px;
+    }
+
+    #like:hover {
+        color: green;
+        background-color: rgb(185, 231, 185);
+        border-radius: 10px;
+        transform: scale(1.1, 1.1);
+    }
+
+    #dislike:hover {
+        color: red;
+        background-color: rgb(252, 196, 196);
+        border-radius: 10px;
+        transform: scale(1.1, 1.1);
+    }
+
+
+
+    hr {
+        width: 70%;
+        margin-left: 15%;
+    }
+    /* message sender */
+
+    .messageSender {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+        width: 500px;
+    }
+
+    .messageSender__top {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #eff2f5;
+        padding: 15px;
+    }
+
+
+    .messageSender__top input {
+        flex: 1;
+        background-color: rgba(0, 0, 0, 0);
+        outline-color: rgba(0, 0, 0, 0);
+        padding: 15px;
+        border: auto;
+        border-radius: 8px;
+    }
+
+    .messageSender__bottom {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .messageSender__option {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        color: gray;
+        margin: 5px;
+    }
+
+    .messageSender__option i {
+        font-size: 23px;
+    }
+
+    .messageSender__option .file {
+        width: 100px;
+        margin-left: 7%;
+    }
+
+    button {
+        border: none;
+        background: transparent;
+    }
+
+    .messageSender__option h3 {
+        font-size: medium;
+        margin-left: 10px;
+    }
+
+    .messageSender__option input {
+        width: 40px;
+        outline: none;
+    }
+
+    .messageSender__option:hover {
+        cursor: pointer;
+        background-color: #eff2f5;
+        border-radius: 20px;
+    }
+
+
+    @media only screen and (max-width: 983px) {
+        .post {
+            width: 350px;
+
+        }
+        .messageSender {
+
+            width: 350px;
+        }
+        .memsP{
+            margin-top: 90px;
+        }
+        .post__options {
+
+            margin-left: 28px;
+        }
+
+
+    .messageSender__option {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        color: gray;
+        margin: 3px;
+    }
+
+    .messageSender__option i {
+        font-size: 15px;
+    }
+
+    .messageSender__option .file {
+        width: 95px;
+        margin-left: 7%;
+    }
+
+    .messageSender__option h3 {
+        font-size: small;
+        margin-left: 10px;
+    }
+
+    .messageSender__option input {
+        width: 25px;
+        outline: none;
+    }
+
+
+      }

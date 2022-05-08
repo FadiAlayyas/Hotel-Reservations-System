@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/******************* start **********************/
+.header{
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    flex-direction: column;
+    box-shadow: 5px 6px 10px rgb(185, 185, 185);
+}
+.header p{
+    font-weight: bold;
+    color: rgb(95, 94, 94);
+}
+.input-file{
+    background-color: white;
+}
+.header input,.header textarea,.sele{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 97%;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    color: gray;
+    outline: none;
+}
+.sele{
+    width: 99%;
+    height: 40px;
+}
+.header textarea{
+    height: 100px;
+    resize: vertical;
+}
+.btn-header{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+.btn-header:hover{
+    opacity: 0.7;
+}
+.btn-blue{
+    background-color: #265acc;
+    color: white;
+}
+.btn-gray{
+    background-color: rgb(109, 109, 109);
+    color: white;
+}
+/******************* end **********************/
+

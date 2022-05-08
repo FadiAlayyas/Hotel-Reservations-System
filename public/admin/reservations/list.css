@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/*  styling scrollbars  */
+
+.wrapper {
+  --bg-color: #fafafa;
+  background-color: var(--bg-color);
+  width: 100%;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col-4{
+  width: 22.5%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+@media screen and (max-width:1320px) {
+  .col-4{
+    width: 31.333%;
+  }
+}
+@media screen and (max-width:789px) {
+  .col-4{
+    width: 48%;
+  }
+}
+/* gradient stroke */
+.card-gradient {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #fff, #CFCFCF);
+  padding: 1px;
+  border-radius: 4px;
+  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 300ms linear, background-position 300ms linear;
+  overflow: hidden;
+}
+.card-inner {
+  background-color: white;
+  border-radius: 4px;
+}
+/* to animate on hover only top of the card */
+.box-hover {
+  position: relative;
+}
+/* to hide border stroke where is folded corner */
+.box-hover::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-top: 3px solid var(--bg-color);
+  border-right: 3px solid var(--bg-color);
+  top: -2px;
+  right: -2px;
+  width: 48px;
+  height: 48px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.box-header {
+  background-color: #E2E2E2;
+  font-size: 20px;
+
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  padding: 16px 14px 14px;
+  border-radius: 4px 4px 0 0;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: color 500ms ease;
+}
+/* circle on hover */
+.box-header::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 49px;
+  left: 43px;
+  transform: scale(1);
+  transition: 400ms ease-in;
+  background-position: center;
+}
+.box-header img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 33%;
+}
+
+/* folded corner */
+.triangle {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-color);
+  border-radius: 0 0 0 4px;
+}
+
+.triangle::before {
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 4px;
+  background-image: linear-gradient(55.62deg, #FFFFFF 26.5%, #ECECEC 61%);
+  z-index: 1;
+}
+
+.triangle::after {
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 4px;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.001) 50%, var(--bg-color) 50%);
+  z-index: 1;
+}
+
+.triangle .shadow {
+  display: block;
+  transform-origin: left top;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  transform: rotate(-4deg);
+  top: 4px;
+  left: 1px;
+  border-radius: 4px;
+  background-color: #000;
+  opacity: 0.32;
+  filter: blur(2px);
+  transition: 300ms ease-in-out;
+}
+
+/**/
+.box .box-body {
+  padding: 32px 30px 16px;
+}
+.infor{
+  display: flex;
+  line-height: 1.7;
+}
+.infor p{
+  margin-left: 5%;
+  margin-top: 1%;
+}
+.infor h3{
+  color: #2e4a66;
+}
+
+
+.box-footer {
+  text-align: center;
+  padding: 14px 14px 13px;
+  transition: 350ms ease;
+  background-color: #469cac;
+  cursor: pointer;
+}
+
+.box-footer .link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  display: inline-block;
+}
+
+.box-footer:hover {
+  background-color: #53bacc;
+}
+
+
+
+.aaaa {
+
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    font-style: oblique;
+    color: #143555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body-book {
+    font-size: 12px;
+    font-family: Comic Sans MS;
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+            margin-left: 3%;
+}
+
+div#main-card {
+    max-width: 300px;
+    box-shadow: -5px 2px 18px 4px #ccc;
+}
+
+.cover-photo {
+    background: #143555;
+    width: 240px;
+    height: 80px;
+}
+
+.photo {
+    background: #f9f9f9;
+    width: 240px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.imggg {
+    position: relative;
+    top: -50px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    box-shadow: -1px 1px 11px 6px rgba(189, 172, 172, 0.33);
+}
+.content-book {
+    background: #f9f9f9;
+    width: 240px;
+    height: 100px;
+    position: relative;
+    top: -35px;
+}
+
+.contact-book {
+    background: #30354d;
+    width: 240px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.name-book,.email,.fadi {
+    margin: 0;
+    text-align: center;
+}
+.fadi {
+    color: #0ab581;
+    text-decoration: none;
+}
+
+.fadi:hover {
+    color: black;
+}
+.name-book {
+    padding-bottom: 20px;
+}
+
+.fullstack {
+    padding-bottom: 10px;
+}
+
+
+ul {
+    padding: 0;
+}
+
+.ff {
+    font-size: 22px;
+    padding: 10px;
+    text-decoration: none;
+    color: #0ab581;
+}
+
+.ff:hover {
+    color: #000;
+}
+
+
+div#main-card:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+    @-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+    @keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}

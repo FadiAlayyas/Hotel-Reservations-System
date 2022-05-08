@@ -1,0 +1,128 @@
+.all_form{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 500px;
+  margin-left: 30%;
+  margin-top: 130px;
+  box-shadow: -3px 10px 60px rgb(143, 142, 142);
+  border-radius: 5px;
+}
+.form_left{
+  width: 45%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.form_left img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.form_right{
+  width: 55%;
+  height: 100%;
+  background-color: rgb(61, 61, 61);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.form_width{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.form_width input{
+  width: 40%;
+    padding: 10px 0;
+    font-size: 12px;
+    font-family: cursive;
+    color: white;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+.input_right,.gender{
+  width: 84%;
+    padding: 10px 0;
+    font-size: 12px;
+    font-family: cursive;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 7.5%;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+.gender option{
+  color: gray;
+}
+::placeholder{
+  color: white;
+}
+.form_btn{
+  margin-top: 3%;
+  margin-left: 42%;
+  border: none;
+  width: 80px;
+  padding: 7px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  background: linear-gradient(to right,#4178AF,#527EAA,#9ECAFF,white);
+  color: white;
+  font-family: cursive;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.form_btn:hover{
+  transform: scale(1.09);
+}
+@media screen and (max-width:1009px) {
+  .all_form{
+    width: 80%;
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width:774px) {
+  .all_form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 770px;
+    margin-bottom: 20px;
+    border-top-left-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  }
+  .form_left{
+    width: 100%;
+    border-top-left-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  }
+  .form_left img{
+    border-top-left-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  }
+  .form_right{
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  }
+  .form_btn{
+    margin-bottom: 20px;
+  }
+}

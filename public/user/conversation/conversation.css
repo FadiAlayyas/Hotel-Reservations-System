@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/*  styling scrollbars  */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a5aaad;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2B4F60;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5aaad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.text-primary-p {
+  color: #a5aaad;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-title {
+  color: #2e4a66;
+}
+
+.text-lightblue {
+  color: #469cac;
+}
+
+.text-red {
+  color: #cc3d38;
+}
+
+.text-yellow {
+  color: #a98921;
+}
+
+.text-green {
+  color: #3b9668;
+}
+.text-pink{
+  color: #B53471;
+}
+.text-blue{
+  color: #1B1464;
+}
+.text-roze{
+  color: #ffb8b8;
+}
+.text-color{
+  color: #3ea175;
+}
+
+
+  .con{
+      flex: 1;
+      margin-top: 75px;
+      margin-left: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px #777777;
+  }
+
+  #head{
+    width:500px;
+    height:70px;
+    display: flex;
+    background: #f0f4fc;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #d2e7e75d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+  }
+  #body{
+    width:500px;
+    height:400px;
+    overflow-y: auto;
+    background-image: url('images/chat.jpg');
+  }
+
+  #btm{
+    width:500px;
+    height:50px;
+    background: #f0f4fc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #head  img{
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    border: solid 1px rgb(146, 184, 255);
+    margin-top: 10px;
+    margin-left: 10px;
+
+  }
+
+
+
+  #head  h3{
+    margin-top: 18px;
+    margin-left: 16px;
+    margin-bottom: 1px;
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+  }
+  #head  p{
+    margin-top: 5px;
+    margin-left: 16px;
+    color:rgb(58, 58, 58);
+  }
+
+#head button{
+  margin-left: 500px;
+  margin-bottom: 200px;
+}
+
+
+
+  #btm button{
+    width: 5%;
+    height: 40px;
+    margin-top: 3px;
+    margin-left: 2%;
+    border: none;
+    border-radius: 50%;
+    background: #527eaa00;
+    cursor: pointer;
+  }
+
+  #btm button i{
+    font-size: 18px;
+    color: #527EAA;
+  }
+  #btm input{
+    width: 90%;
+    background-color: rgb(226, 226, 226);
+  }
+  #btm form{
+    display: flex;
+  }
+  #text{
+    width:95%;
+    outline: none;
+    border:none;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top:7px;
+    margin-left: 10px;
+
+  }
+
+  .user1{
+    padding: 10px;
+    float:left;
+    margin:5px;
+    max-width: 40%;
+    display: table;
+    color: rgb(255, 255, 255);
+    clear:both;margin-left: 15px;
+    background-color: #b2b2b2;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    word-break: break-all;
+    /* cursor: copy; */
+  }.user2{
+    padding: 10px;
+    float:right;
+    max-width: 40%;
+    background: #527EAA;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin:5px;
+    color:rgb(255, 255, 255);
+    margin-right: 15px;
+    display: table;
+    clear:both;
+    word-break: break-all;
+    /* cursor: pointer; */
+  }
+  @media only screen and (max-width: 600px){
+    .con{
+        margin-top: 75px;
+        margin-left: 14%;
+        width: 400px;
+    }
+    #head , #body ,#btm{
+        width:400px;
+      }
+
+  }
+.delete{
+        cursor: pointer;
+        display: none;
+        width: 20px;
+        height: 22px;
+        border-radius: 100%;
+        background-color: #b2b2b2;
+        color: white;
+       margin-left: 15px;}
+
+  .delete:hover{
+    opacity: 0.6;
+  }

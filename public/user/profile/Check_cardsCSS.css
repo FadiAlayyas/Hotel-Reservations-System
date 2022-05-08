@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f2f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.user__avatar {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.Hidden{
+    display: none;
+}
+/**********End global************/
+
+/*** start the main page ***/
+.Our_container {
+  flex: 1;
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 2%;
+
+}
+
+/* post */
+
+.post {
+  width: 43%;
+
+  margin-top: 2%;
+  border-radius: 7px;
+  background-color: white;
+  	-webkit-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+
+}
+.post__image{
+  overflow: hidden;
+
+}
+.post__image img {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.post__image img:hover{
+  transform: scale(1.1,1.1);
+}
+.post__top {
+  display: flex;
+  position: relative;
+  /* align-items: center; */
+  padding: 15px;
+border-bottom: 2px solid rgb(224, 224, 224);
+}
+.post__avatar {
+  margin-right:13px;
+  width: 40px;
+
+}
+
+.post__topInfo h3 {
+  font-size: medium;
+
+}
+
+.post__topInfo p {
+  font-size: small;
+  color: gray;
+}
+
+.post__Massage {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 25px;
+  word-wrap: break-word;
+  font-family: 'Dancing Script', cursive;
+}
+
+.post__options {
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  color: gray;
+  cursor: pointer;
+  padding: 15px;
+  width: 20%;
+
+  margin-left: 42%;
+}
+
+.post__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex: 1;
+}
+#Delete,#Edite{
+  width: 80px;
+  background-color: rgb(224, 224, 224);
+  padding-top: 10px;
+  padding-left:30px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+
+#Delete:hover {
+  color: rgb(176,224,230);
+  background-color: #5F9EA0;
+  border-radius: 10px;
+  transform: scale(1.1,1.1);
+}
+#Edite:hover{
+  color:#5F9EA0;
+  background-color: rgb(176,224,230);
+  border-radius: 10px;
+  transform: scale(1.1,1.1);
+}
+/** slide icons **/
+.Slid_icons{
+   margin-top: -25%;
+    font-size: 27px;
+}
+#right,#left{
+     color: gray;
+      background-color: rgb(224, 224, 224);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+
+  font-size: 23px;
+  transition: all 0.5s ease-in-out;
+}
+#right{
+    position: absolute;
+   float: right;
+   right: 20%;
+
+}
+#left{
+       position: absolute;
+
+
+   float: left;
+left: 27%;
+
+}
+#left:hover{
+     color:#5F9EA0;
+  background-color: rgb(176,224,230);
+
+  transform: scale(1.1,1.1);
+}
+#right:hover{
+       color:#5F9EA0;
+  background-color: rgb(176,224,230);
+
+  transform: scale(1.1,1.1);
+}
+/**** media *****/
+@media screen and (max-width:1100px) {
+  #Edite,#Delete{
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  .post{
+    width:60%;
+    margin-top: 5%;
+  }
+   #right{
+    float: right;
+    margin-top: -10%;
+margin-right: -10%;
+    font-size: 25px;
+  }
+  #left{
+    float: left;
+     margin-top: -10%;
+    margin-left:-10%;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:717px) {
+  #Edite,#Delete{
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  .post{
+    width: 80%;
+     margin-top: 15%;
+  }
+   #right{
+    float: right;
+    margin-top: -20%;
+margin-right: -10%;
+    font-size: 25px;
+  }
+  #left{
+    float: left;
+     margin-top: -20%;
+    margin-left:-10%;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:580px) {
+#Edite,#Delete{
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  .post{
+    margin-top: 30%;
+    width: 100%;
+  }
+  #right{
+    float: right;
+    margin-top: -30%;
+margin-right: -10%;
+    font-size: 25px;
+  }
+  #left{
+    float: left;
+     margin-top: -30%;
+    margin-left:-10%;
+    font-size: 25px;
+  }
+  }

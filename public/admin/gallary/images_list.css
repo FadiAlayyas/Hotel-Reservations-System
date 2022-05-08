@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/*  styling scrollbars  */
+
+.all-image{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.single-image{
+  margin-top: 20px;
+  width: 19%;
+  border-radius: 5px;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.single-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  filter: brightness(75%);
+}
+.single-image i{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(226, 2, 2);
+    background-color: white;
+    top: 0;
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgb(209, 208, 208);
+    border-radius: 5px;
+    transition: all 0.6s ease-in-out;
+}
+.single-image i:hover{
+  opacity: 0.6;
+}
+@media screen and (max-width:1320px){
+  .single-image{
+    width: 23%;
+  }
+}
+@media screen and (max-width:787px){
+  .single-image{
+    width: 31%;
+  }
+}
+@media screen and (max-width:591px){
+  .single-image{
+    width: 46%;
+  }
+}
+
+/*  SIDEBAR STARTS HERE  */

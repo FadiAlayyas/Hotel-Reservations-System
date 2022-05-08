@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+    background:#f9f9f9;
+}
+/*Gallery*/
+.header{
+    background-size: cover;
+    height: 550px;
+    border-radius: 0 0 85% 85% /30%;
+}
+.head-gallery{
+    font-family: cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 31px;
+    text-align: center;
+    color: #2B4F60;
+    text-shadow: 1px 3px 7px rgb(201, 201, 201);
+}
+.gal-width{
+    width: 85vw;
+    margin: 0 auto!important;
+}
+.hidden{
+    display: none;
+}
+.image_gal{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.imgg{
+    width: 24%;
+    height: 350px;
+    padding: 5px;
+    filter: brightness(80%);
+    overflow: hidden;
+}
+.imgg  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.imgg  img :hover{
+    transform: scale(1.1,1.1);
+}
+@media screen and (max-width:1170px){
+    .imgg{
+        width: 32%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .imgg{
+        width: 48%;
+        padding: 5px;
+    }
+}
+@media screen and (max-width:613px){
+    .imgg{
+        width: 99%;
+        padding: 5px;
+    }
+}
+/*end Gallery */
+

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/*  styling scrollbars  */
+
+.all_bill{
+  width: 100%;
+  display: flex;
+}
+.bill{
+width: 50%;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0px 1px 7px rgb(158, 158, 158);
+font-family: comic,sans Ms;
+margin-left: 23%;
+margin-top: 2%;
+}
+@media screen and (max-width:1232px) {
+  .bill{
+    width: 60%;
+  }
+}
+@media screen and (max-width:1049px) {
+  .bill{
+    width: 70%;
+  }
+}
+@media screen and (max-width:778px) {
+  .bill{
+    width: 80%;
+    margin-left: 12%;
+  }
+}
+@media screen and (max-width:633px) {
+  .bill{
+    width: 90%;
+    margin-left: 3%;
+  }
+}
+.top_bill{
+  display: flex;
+  flex-direction: row;
+  background-color: #2e4a66;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  color: white;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.top_bill h3{
+  margin-left: 3%;
+  font-size: 16px;
+}
+.top_bill i{
+  font-size: 28px;
+}
+.both_bill{
+  display: flex;
+  padding: 10px;
+  width: 93%;
+  margin-top: 3%;
+  margin-left: 7%;
+}
+.both_bill h3{
+  float: left;
+  width: 60%;
+  color: #3b9668;
+  font-size: 17px;
+}
+.both_bill p{
+  float: right;
+  width: 40%;
+  color: gray;
+  font-size: 16px;
+}
+hr{
+  width: 90%;
+  margin-left: 5%;
+  background-color: whitesmoke;
+  color: whitesmoke;
+}
+.date_bill{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  margin-left: 7%;
+}
+.date_bill h3{
+  color: #3b9668;
+}
+.date_bill p{
+  color: gray;
+}
+.date1{
+  width: 50%;
+}
+.date2,.date3{
+  width: 25%;
+}
+.person_bill{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  margin-left: 7%;
+}
+.person_bill h3{
+  color: #3b9668;
+}
+.person_bill p{
+  color: gray;
+}
+.person1{
+  width: 50%;
+}
+.person2,.person3{
+  width: 25%;
+}
+.other_name{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  margin-left: 7%;
+}
+.other_name h3{
+  color: #3b9668;
+}
+.other_name p{
+  color: gray;
+}
+.null{
+  width: 50%;
+}
+.other1{
+  width: 25%;
+}
+.other2{
+  width: 25%;
+}

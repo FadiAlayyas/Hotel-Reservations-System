@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/****************** start icon ******************/
+
+.control_icon{
+  width: 87%;
+  background: linear-gradient(to right,#2e4a66,#469cac,white);
+  box-shadow: 0 20px 50px rgb(155, 154, 154);
+  height: 560px;
+  margin-left: 8%;
+  border-top-left-radius: 65px;
+  border-bottom-right-radius: 65px;
+}
+.all_icon{
+  margin-left: 18%;
+  margin-top: 2%;
+  padding-top: 3%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.Icontitle{
+  width:  370px;
+height: 50px;
+}
+.all_icon h2{
+  font-size: 27px;
+  color:#91C0E0;  font-family: "Lato", sans-serif;  font-weight: 400;
+
+ transition: 0.6s;
+ box-shadow: 0 20px 50px rgba(0,0,0,.5);
+
+ padding: 15px;
+ position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+     border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+
+}
+.all_icon ul{
+   overflow: hidden;
+  width: 395px;
+  height: 450px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0 ;
+  box-sizing: border-box;
+  margin-right: 11%;
+  margin-top: 3%;
+  background: transparent;
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, 0.5);
+   border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  overflow-y: auto;
+}
+.all_icon ul:before{
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ bottom: -50%;
+ pointer-events:none ;
+ z-index: 1;
+}
+.all_icon ul li{
+ position: relative;
+ list-style: none;
+ text-align: center;
+ margin: 10px ;
+
+}
+.all_icon ul label{
+ position: relative;
+}
+.all_icon ul input{
+ position:absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+.icon_box{
+ width: 110px;
+ height: 50px;
+
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: 0.6s;
+
+}
+.faa{
+ font-size: 27px;
+ color: #B8CCDB;
+ transition: 0.6s;
+ box-shadow: 0 20px 50px rgba(0,0,0,.6);
+ padding: 9px;
+ border-radius: 50%;
+ cursor: pointer;
+}
+
+.icon_box:hover .faa{
+ transform: scale(1.3,1.2);
+ color:#91C0E0;
+}
+.Buton{
+ position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ margin-right: 12%;
+
+}
+.Buton button{
+background: transparent;
+color:#91C0E0;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+   border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-right: 3px solid #69B0E0;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  letter-spacing: .15em;
+padding-right:  10px;
+padding-top:  5px;
+padding-left: 3px;
+padding-bottom:  5px;
+ box-shadow: 0 20px 50px rgba(0,0,0,.6);
+ margin-left: 50px;
+ transition: all 0.5s ease-in-out;
+ cursor: pointer;
+}
+.Buton:hover button{
+  transform: scale(1.1,1.1);
+   box-shadow: 0 20px 50px rgba(0,0,0,.7);
+
+}
+@media screen and (max-width:1300px) {
+  .Buton button{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:1183px) {
+  .all_icon{
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width:1089px) {
+  .all_icon{
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width:801px) {
+  .all_icon{
+    margin-left: 15%;
+  }
+  .Buton button{
+    margin-top: 5%;
+    margin-left: 160px;
+  }
+  .control_icon{
+    height: 600px;
+  }
+}
+@media screen and (max-width:580px) {
+  .Buton button{
+    margin-top: 5%;
+    margin-left: 100px;
+  }
+}
+/****************** end icon ******************/

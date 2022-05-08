@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/*  styling scrollbars  */
+
+.table_list{
+    width: 100%;
+    height: 510px;
+    overflow-y: scroll;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    flex-direction: column;
+    box-shadow: 5px 6px 10px rgb(185, 185, 185);
+}
+
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.table td,.table th{
+  padding:12px 15px;
+
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+
+	color:gray;
+  border-bottom: 3px solid rgb(230, 230, 230);
+  height: 30px;
+}
+.tr_btn{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.active_btn{
+  border: none;
+  padding: 7px;
+  color: green;
+  background-color: rgb(227, 253, 227);
+  border-radius: 10px;
+  font-size: 15px;
+}
+.waiting_btn{
+  border: none;
+  padding: 7px;
+  color: rgb(190, 100, 26);
+  background-color: rgb(253, 228, 207);
+  border-radius: 10px;
+  font-size: 15px;
+}
+.details_btn{
+  border: none;
+  padding: 7px;
+  background-color: #469cac;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fa-check{
+  color: blue;
+}
+.fa-trash{
+  color: red;
+}
+.active_btn .fa-circle{
+  color: green;
+  font-size: 9px;
+}
+.waiting_btn .fa-circle{
+  color: rgb(190, 100, 26);
+  font-size: 9px;
+}
+.color{
+  color: gray;
+}
+/*responsive*/
+
+@media(max-width: 657px){
+  .table_list{
+    overflow-x: scroll;
+  }
+
+}
+

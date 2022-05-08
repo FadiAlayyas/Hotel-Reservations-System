@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+/*  styling scrollbars  */
+.main__title_room {
+    display: flex;
+    align-items: center;
+  }
+  .main__greeting_room > h1 {
+    font-size: 24px;
+    color: #2e4a66;
+    margin-bottom: 5px;
+  }
+.cont_room{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+  margin:  auto;
+	height: 350px;
+	width: 70%;
+	margin-bottom: 1%;
+}
+
+.product-details-room {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+margin-top: 1%;
+}
+
+.product-details-room h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin-bottom: 2%;
+
+
+}
+
+.product-details-room h1:before{
+	position: absolute;
+	content: '';
+	right: 0%;
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+.hint-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+  margin-bottom: 2%;
+}
+
+
+ .product-details-room > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+
+}
+
+.control-room{
+  display: inline-block;
+  margin-left: 35%;
+  border: 2px dotted #344055;
+  background-color: whitesmoke;
+  width: 30%;
+  padding: 7px;
+  border-radius: 5px;
+  margin-top: 7%;
+}
+.control-room button{
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  margin-left: 20%;
+}
+.control-room a{
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    margin-left: 20%;
+  }
+.fa-edit{
+  color: rgb(5, 5, 187);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.fa-trash{
+  color: rgb(226, 5, 5);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.fa-trash:hover,.fa-edit:hover{
+  opacity: 0.6;
+}
+.product-image-room {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+    float: right;
+	width: 45%;
+	display: inline-block;
+  word-break: break-all;
+}
+
+.image100 {width: 100%;height: 100%;}
+
+.info_room {
+    background: rgba(0, 0, 0,0.7);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+}
+.info_room ul li{
+  margin-left: 3%;
+}
+.info_room h2 {text-align: center}
+.product-image-room:hover .info_room{transform: translateX(0);}
+
+.info_room ul li{transition: 0.3s ease;}
+
+.product-image-room:hover img {transition: all 0.3s ease-out;}
+.product-image-room:hover img {transform: scale(1.2, 1.2);}
+@media screen and (max-width:884px) {
+  .cont_room{
+    width: 85%;
+  }
+}
+@media screen and (max-width:695px) {
+  .cont_room{
+    width: 99%;
+  }
+}
+@media screen and (max-width:593px) {
+  .cont_room{
+    height: 400px;
+  }
+}

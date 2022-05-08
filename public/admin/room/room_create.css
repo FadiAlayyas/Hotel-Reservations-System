@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/*  styling scrollbars  */
+
+.both{
+  display: flex;
+  width: 100%;
+}
+.one{
+  width: 49%;
+}
+.two{
+  width: 48%;
+}
+.Room_create{
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    flex-direction: column;
+    box-shadow: 5px 6px 10px rgb(185, 185, 185);
+}
+.Room_create p{
+    font-weight: bold;
+}
+.Room_create img{
+    margin-bottom: 10px;
+}
+.input-file{
+    background-color: white;
+}
+.Room_create input,.Room_create textarea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 97%;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    color: gray;
+    outline: none;
+}
+.select_Room_create{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 99%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    color: gray;
+    outline: none;
+}
+
+.Room_create textarea{
+    height: 100px;
+    resize: vertical;
+}
+.btn-Room_create{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+.btn-Room_create:hover{
+    opacity: 0.7;
+}
+.btn-blue{
+    background-color: #265acc;
+    color: white;
+}
+.btn-gray{
+    background-color: rgb(109, 109, 109);
+    color: white;
+}

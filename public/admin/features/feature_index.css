@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/*  styling scrollbars  */
+
+.all{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1%;
+}
+.one{
+  width: 23%;
+  margin-left: 1.5%;
+  margin-top: 1%;
+  height: 138px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgb(218, 217, 217);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.one:hover{
+  background-color: #ecebeb;
+  transform: scale(1.03);
+}
+.both{
+  display: flex;
+  flex-direction: row;
+  margin-left: 27%;
+  margin-top: 5%;
+}
+.both p{
+  font-size: 20px;
+  color: gray;
+}
+.both_btn{
+  margin-left: 20%;
+  font-size: 25px;
+  margin-top: 2.5%;
+  border: none;
+  background: transparent;
+}
+hr{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+.one_btn{
+  margin-left: 47%;
+  margin-top: 10%;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+}
+.both i{
+    color: #2e4a66;
+}
+.fa-trash{
+    color: red;
+}
+@media screen and (max-width:820px) {
+  .one{
+    width: 30%;
+  }
+}
+@media screen and (max-width:601px) {
+  .one{
+    width: 48%;
+  }
+}

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/*  styling scrollbars  */
+
+/********************* start **********************/
+.all_info{
+
+	font-family: Montserrat, sans-serif;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height:90vh;
+
+}
+.card-container {
+ display: flex;
+	background-color: #020509;
+	border-radius: 10px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 60%;
+	max-width: 90%;
+	text-align: center;
+
+           	-webkit-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+}
+.one{
+  width: 60%;
+}
+.two{
+  padding-left: 40px;
+  padding-top: 140px;
+  width: 35%;
+}
+.two p{
+  background:  linear-gradient(to right bottom,#4178AF,#527EAA,#9BC9FF,#fff);
+  color: white;
+  padding: 10px;
+  width: 140px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-family: "Playfair Display";
+}
+.card-container .pro {
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+}
+.card-container img{
+  width: 120px;
+    height: 120px;
+}
+.card-container .round {
+	border: 1px solid #9BC9FF;
+	border-radius: 50%;
+	padding: 7px;
+    width: 100px;
+    height: 100px;
+ cursor: pointer;
+
+  transition: all 0.6s ease-in-out;
+}
+.round:hover{
+
+    transform: scale(1.03,1.03);
+
+}
+.buttons{
+    margin-top: 25px;
+}
+hr{
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+button.primary {
+
+	 background:  linear-gradient(to right bottom,#4178AF,#527EAA,#9BC9FF,#fff);
+	border: 1px solid #9BC9FF;
+
+	border-radius: 3px;
+	color: #231E39;
+    width: 120px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.6s ease-in-out;
+}
+
+button:hover{
+	background-color: transparent;
+	color: white;
+}
+
+.skills {
+	background-color: #020509;
+	text-align: left;
+	padding: 15px;
+  padding-left: 30px;
+	margin-top: 15px;
+    	border-radius: 10px;
+}
+
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding-top:10px;
+}
+
+.skills ul li {
+	border: 1px solid #2D2747;
+
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+.skills li:hover{
+    border: 1px solid #527EAA;
+}
+.skills i{  background: -webkit-linear-gradient(#4178AF,#527EAA,#9BC9FF,#fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/****media **/
+@media screen and (max-width:1074px) {
+  .card-container{
+    width: 70%;
+  }
+}
+@media screen and (max-width:725px) {
+  .card-container{
+    width: 80%;
+  }
+}
+@media screen and (max-width:656px) {
+  .card-container{
+    width: 90%;
+  }
+}
+@media screen and (max-width:582px) {
+  .card-container{
+    width: 95%;
+  }
+  .two p{
+    width: 100px;
+  }
+}
+/********************* start **********************/
+
